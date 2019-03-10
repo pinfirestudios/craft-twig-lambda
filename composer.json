@@ -1,0 +1,40 @@
+{
+    "name": "pinfirestudios/craft-twig-lambda",
+    "description": "Adds Lambda functions to TWIG",
+    "type": "craft-plugin",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "twiglambda"
+    ],
+    "support": {
+        "docs": "https://github.com/pinfirestudios/craft-twig-lambda/blob/master/README.md",
+        "issues": "https://github.com/pinfirestudios/craft-twig-lambda/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pinfire Studios",
+            "homepage": "http://www.pinfirestudios.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+		"dpolac/twig-lambda": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "pinfirestudios\\twiglambda\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Twig Lambda",
+        "handle": "twiglambda",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/pinfirestudios/craft-twig-lambda/master/CHANGELOG.md",
+        "class": "pinfirestudios\\twiglambda\\Plugin"
+    }
+}

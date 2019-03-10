@@ -52,7 +52,16 @@ class Plugin extends BasePlugin
     public function init()
     {
         parent::init();
-        self::$plugin = $this;
+		self::$plugin = $this;
+
+		if (!Craft::$app->request->getIsSiteRequest())
+		{
+			Craft::info(
+				Craft::t('twiglambda', 'twiglambda plugin not loaded because request is not a site request')
+			);
+
+			return;
+		}
 
         Craft::$app->view->registerTwigExtension(new \DPolac\TwigLambda\LambdaExtension());
 

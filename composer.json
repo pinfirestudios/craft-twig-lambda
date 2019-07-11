@@ -22,8 +22,14 @@
     ],
     "require": {
         "craftcms/cms": "^3.0.0",
-		"dpolac/twig-lambda": "^1.0"
+		"dpolac/twig-lambda": "dev-twig_2_10_workaround"
     },
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/pinfirestudios/twig-lambda.git"
+		}
+	],
     "autoload": {
         "psr-4": {
           "pinfirestudios\\twiglambda\\": "src/"
